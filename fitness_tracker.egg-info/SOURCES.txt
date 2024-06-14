@@ -1,0 +1,8 @@
+README.md
+setup.py
+fitness_tracker.egg-info/PKG-INFO
+fitness_tracker.egg-info/SOURCES.txt
+fitness_tracker.egg-info/dependency_links.txt
+fitness_tracker.egg-info/entry_points.txt
+fitness_tracker.egg-info/requires.txt
+fitness_tracker.egg-info/top_level.txt

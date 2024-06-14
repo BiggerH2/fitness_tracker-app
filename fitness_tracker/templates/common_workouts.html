@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Common Workouts</h2>
+<ul>
+    {% for workout in workouts %}
+        <li class="workout">
+            <h3>{{ workout.type }}</h3>
+            <p>Duration: {{ workout.duration }} minutes, Calories Burned: {{ workout.calories_burned }}</p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

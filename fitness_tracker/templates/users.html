@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Users</h2>
+    <ul>
+        {% for user in users %}
+            <li>ID: {{ user.id }}, Username: {{ user.username }}, Age: {{ user.age }}, Goals: {{ user.fitness_goals }}
+                <a href="{{ url_for('user_workouts', user_id=user.id) }}">View Workouts</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add User</h2>
+    <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="fitness_goals">Fitness Goals:</label>
+        <input type="text" id="fitness_goals" name="fitness_goals" required>
+        <button type="submit">Add User</button>
+    </form>
+{% endblock %}

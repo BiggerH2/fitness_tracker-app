@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ user.username }}'s Workouts</h2>
+<ul>
+    {% for workout in workouts %}
+        <li class="workout">
+            <h3>{{ workout.workout_type }}</h3>
+            <p>ID: {{ workout.id }}, Duration: {{ workout.duration }} minutes, Calories Burned: {{ workout.calories_burned }}, Date: {{ workout.date }}</p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
