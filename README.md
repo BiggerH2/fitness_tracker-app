@@ -56,6 +56,4 @@ Use the CLI to interact with the application. Here are some commands:
 
 Feel free to submit issues and pull requests.
 
-## License
 
-This project is licensed under the MIT License.
